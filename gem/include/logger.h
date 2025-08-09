@@ -1909,7 +1909,7 @@ namespace Gem
             }
         }
 
-        void process_loop(std::size_t worker_id)
+        void process_loop(std::size_t worker_id [[maybe_unused]] )
         {
             while (running_.load())
             {
